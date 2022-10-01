@@ -1,0 +1,211 @@
+.bags {
+    margin-top: 30px;
+    @media (min-width: $tablet){
+        margin-top: 50px;
+    }
+}
+
+.bags__title {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: calc(30/22);
+    color: $mainColor;
+    @media (min-width: $tablet){
+        font-size: 30px;
+    }
+    @media (min-width: $desktop){
+        font-size: 38px;
+    }
+}
+
+.bags-list-slider {
+    margin-top: 25px;
+    @media (min-width: $desktop){
+        margin-top: 30px;
+    }
+}
+
+.bags-list-item {
+    position: relative;
+    width: 104px;
+    @media (min-width: $tablet){
+        width: 168px;
+    }
+    @media (min-width: $desktop){
+        width: 223px;
+    }
+    @media (min-width: $wdesktop){
+        width: 175px;
+    }
+}
+
+.bags-item-container {
+    height: 124px;
+    background-color: $containerColor;
+    @media (min-width: $tablet){
+        height: 201px;
+    }
+    @media (min-width: $desktop){
+        height: 266px;
+    }
+    @media (min-width: $wdesktop){
+        height: 221px;
+    }
+}
+
+.bags-item-badge {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 32px;
+    font-family: 'Inter';
+    font-size: 7px;
+    line-height: calc(17/7);
+    color: $priceColor;
+    background-color: $backgoundColor;
+    @media (min-width: $tablet){
+        font-size: 9px;
+    }
+    @media (min-width: $desktop){
+        top: 10px;
+        left: 10px;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 12px;
+    }
+}
+
+.bags-item__like {
+    position: absolute;
+    top: 103px;
+    right: 7px;
+    z-index: 3;
+    @media (min-width: $tablet){
+        top: 177px;
+        right: 10px;
+    }
+    @media (min-width: $desktop){
+        top: 242px;
+        right: 10px;
+    }
+    @media (min-width: $wdesktop){
+        top: 197px;
+        right: 10px;
+    }
+}
+
+.bags-item__like-btn {
+    padding: 0;
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+
+.bags-item-svg-heart {
+    width: 9px;
+    stroke: $secondaryColor2;
+    fill: transparent;
+    @media (min-width: $tablet){
+        width: 13px;
+    }
+    @media (min-width: $desktop){
+        width: 14px;
+    }
+}
+
+.bags-item__title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(12/10);
+    text-transform: uppercase;
+    color: $mainColor;
+    @media (min-width: $tablet){
+        font-size: 15px;
+    }
+    @media (min-width: $desktop){
+        font-size: 16px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 18px;
+    }
+}
+
+.bags-item__old-price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: calc(8/7);
+    text-decoration-line: line-through;
+    color: $secondaryColor3;
+    @media (min-width: $tablet){
+        font-size: 11px;
+    }
+    @media (min-width: $desktop){
+        font-size: 12px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 14px;
+    }
+}
+
+.bags-item__price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(12/10);
+    color: $priceColor;
+    @media (min-width: $tablet){
+        font-size: 15px;
+    }
+    @media (min-width: $desktop){
+        font-size: 16px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 18px;
+    }
+}
+
+.bags-item__code {
+    display: none;
+    margin-top: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5px;
+    line-height: calc(6/5);
+    color: $secondaryColor3;
+    @media (min-width: $tablet){
+        font-size: 9px;
+    }
+}
+
+.bags ul.lSPager {
+    margin-top: 25px !important;
+    @media (min-width: $tablet){
+        margin-top: 30px !important;
+    }
+}
+
+.bags ul.lSPager.lSpg > li > a {
+    background-color: $containerColor;
+}
+
+.bags ul.lSPager.lSpg > li.active > a {
+    background-color: $buttonColor;
+}

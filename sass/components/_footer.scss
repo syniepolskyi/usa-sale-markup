@@ -1,0 +1,154 @@
+.footer {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 75px;
+  background: linear-gradient(
+    270.84deg,
+    #1f3454 0%,
+    #294060 49.03%,
+    #3e5474 100%
+  );
+  @media (min-width: $tablet){
+    padding-bottom: 100px;
+  }
+}
+
+.footer-container {
+  display: block;
+  @media (min-width: $wdesktop){
+    display: flex;
+  }
+}
+
+.footer-logo-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: $backgoundColor;
+}
+
+.footer-logo-svg {
+  width: 147px;
+  @media (min-width: $tablet) {
+    width: 149px;
+  }
+  @media (min-width: $desktop) {
+    width: 169px;
+  }
+  @media (min-width: $wdesktop) {
+    width: 146px;
+  }
+}
+
+.footer-logo-text {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: $backgoundColor;
+  @media (min-width: $tablet){
+    font-size: 15px;
+  }
+}
+
+.footer-list {
+  margin-top: 30px;
+  @media (min-width: $tablet) {
+    display: flex;
+    gap: 70px;
+  }
+  @media (min-width: $desktop) {
+    margin-top: 10px;
+  }
+}
+
+.footer-list-item:not(:last-child){
+  margin-bottom: 30px;
+}
+
+.footer-part {
+  display: block;
+  @media (min-width: $desktop){
+    display: flex;
+  }
+}
+
+.footer-logo {
+  display: block;
+  @media (min-width: $desktop){
+    margin-right: 85px;
+  }
+}
+
+.footer-list-item h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 0.94;
+  color: $backgoundColor;
+  @media (min-width: $tablet){
+    font-size: 23px;
+    line-height: calc(31/23)px;
+  }
+}
+
+.footer-list__client-list, 
+.footer-list__address, 
+.footer-list__lawnotes-list {
+  margin-top: 10px;
+  @media (min-width: $tablet) {
+    margin-top: 30px;
+  }
+}
+
+.footer-list__secondary-item a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.7;
+  color: $backgoundColor;
+  @media (min-width: $tablet) {
+    font-size: 15px;
+  }
+}
+
+.footer-socials {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: $desktop) {
+    margin-top: -50px;
+  }
+  @media (min-width: $wdesktop) {
+    margin-top: 10px;
+    margin-left: 70px;
+    align-self: flex-start;
+  }
+}
+
+.footer-svg {
+  fill: $backgoundColor;
+  width: 32px;
+  @media (min-width: $tablet) {
+    width: 35px;
+  }
+}
+
+.svg-youtube {
+  width: 41px;
+  @media (min-width: $tablet) {
+    width: 47px;
+  }
+}

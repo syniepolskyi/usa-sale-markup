@@ -1,0 +1,110 @@
+.wdesktop-menu {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    z-index: 3;
+    background-color: $backgoundColor;
+    width: 100%;
+    @media (max-width: calc($wdesktop - 1px)){
+        display: none;
+    }
+}
+
+.menu-flex-container {
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid $borderColor;
+}
+
+.wdesktop-main-block-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wdesktop-menu-img-wrapper {
+    width: 45px;
+    height: 45px;
+    background-color: $containerColor3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.wdesktop-main-block-list > li > a {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22/16);
+    color: $mainColor;
+    &.wdesktop-menu-active-link {
+        color: $buttonColor;
+    }
+}
+
+.wdesktop-main-block-list > li > a > span {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wdesktop-main-block-list > li > a:hover > span {
+    color: $buttonColor;
+}
+
+.wdesktop-main-block-list > li > a svg.svg-wdesktop-menu-triangle {
+    width: 10px;
+    transform: rotate(-90deg);
+    fill: $backgoundColor;
+}
+
+.wdesktop-main-block-list > li > a.wdesktop-menu-active-link svg.svg-wdesktop-menu-triangle {
+    fill: $buttonColor;
+}
+
+.wdesktop-secondary-block > a {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22/16);
+    color: $mainColor;
+    padding-bottom: 15px;
+}
+
+.wdesktop-secondary-block > a > span {
+    padding-left: 15px;
+}
+
+.wdesktop-menu-good:not(:first-child) {
+    margin-top: 10px;
+}
+
+.wdesktop-menu-good > a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(19/14);
+    color: $mainColor;
+}
+
+.wdesktop-menu-show-all-btn {
+    margin-top: 35px;
+    width: 153px;
+    height: 39px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19/14);
+    color: $backgoundColor;
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 5px;
+}

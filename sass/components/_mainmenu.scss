@@ -1,0 +1,292 @@
+
+
+.main-menu-initial-placed {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-100%, 0);
+}
+
+.main-menu-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    height: 52px;
+    border-bottom: 1px solid $borderColor;
+    @media (min-width: $tablet) {
+        height: 77px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+.main-menu-item-container {
+    margin: 0 auto;
+    max-width: calc($mobile - 40px);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19/14);
+    color: $mainColor;
+    @media (min-width: $tablet) {
+        max-width: calc($tablet - 40px);
+        width: calc($tablet - 40px);
+        font-size: 20px;
+    }
+    @media (min-width: $desktop) {
+        max-width: calc($desktop - 40px);
+        width: calc($desktop - 40px);
+    }
+}
+
+.main-menu-item-arrow {
+    width: 8px;
+    stroke: $mainColor;
+    fill: transparent;
+    @media (min-width: $tablet) {
+        width: 12px;
+    }
+}
+
+.main-menu-btns {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    @media (min-width: $tablet) {
+        padding-top: 50px;
+        gap: 30px;
+    }
+}
+
+.main-menu-btn {
+    width: 157px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16/12);
+    border-radius: 5px;
+    @media (min-width: $tablet) {
+        width: 339px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-size: 18px;
+    }
+    @media (min-width: $desktop) {
+        width: 445px;
+        font-size: 20px;
+    }
+    &-signup {
+        background-color: $buttonColor;
+        color: $backgoundColor;
+    }
+    &-signin {
+        background-color: $backgoundColor;
+        color: $mainColor;
+        border: 1px solid $buttonColor;
+        font-weight: 500;
+    }
+}
+
+.main-bottom-menu {
+    margin-top: 30px;
+    @media (min-width: $tablet) {
+        margin-top: 50px;
+    }
+}
+
+.main-bottom-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media (min-width: $tablet) {
+        gap: 21px;
+    }
+    @media (min-width: $desktop) {
+        gap: 28px;
+    }
+}
+
+.main-bottom-menu-item {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(19/14);
+    @media (min-width: $tablet) {
+        font-size: 17px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 20px;
+    }
+    & a {
+        color: $mainColor;
+    }
+    & a span {
+        padding-left: 12px;
+    }
+}
+
+.main-bottom-menu-basket {
+    width: 19px;
+    stroke: transparent;
+    @media (min-width: $tablet) { 
+        width: 29px;
+    }
+    @media (min-width: $desktop) {
+        width: 32px;
+    }
+}
+
+.main-bottom-menu-heart {
+    width: 15px;
+    stroke: $mainColor;
+    fill: transparent;
+    @media (min-width: $tablet) { 
+        width: 25px;
+    }
+    @media (min-width: $desktop) {
+        width: 29px;
+    }
+}
+
+.main-bottom-menu-helpbubble {
+    width: 16px;
+    @media (min-width: $tablet) { 
+        width: 25px;
+    }
+    @media (min-width: $desktop) {
+        width: 30px;
+    }
+}
+
+.contacts-in-main-menu {
+    margin-top: 50px;
+}
+
+.contacts-main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media (min-width: $tablet) {
+        gap: 21px;
+    }
+    @media (min-width: $desktop) {
+        gap: 26px;
+    }
+}
+
+.contacts-main-item {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    @media (min-width: $tablet) {
+        font-size: 17px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 20px;
+    }
+    & a {
+        color : $mainColor;
+    }
+    & a span {
+        padding-left: 10px;
+        @media (min-width: $desktop) {
+            padding-left: 16px;
+        }
+    }
+}
+
+.contacts-main-phone {
+    width: 19px;
+    @media (min-width: $tablet) {
+        width: 25px;
+    }
+    @media (min-width: $desktop) {
+        width: 28px;
+    }
+}
+
+.contacts-main-mail {
+    width: 19px;
+    @media (min-width: $tablet) {
+        width: 25px;
+    }
+    @media (min-width: $desktop) {
+        width: 29px;
+    }
+}
+
+.contacts-main-viber {
+    width: 21px;
+    fill: $viberColor;
+    @media (min-width: $tablet) {
+        width: 24px;
+    }
+    @media (min-width: $desktop) {
+        width: 29px;
+    }
+}
+
+.contacts-main-telegram {
+    width: 19px;
+    fill: $telegramColor;
+    @media (min-width: $tablet) {
+        width: 25px;
+    }
+    @media (min-width: $desktop) {
+        width: 30px;
+    }
+}
+
+a.contacts-main-viber-link {
+    color: $viberColor;
+}
+
+a.contacts-main-telegram-link {
+    color: $telegramColor;
+}
+
+.contacts-main-location {
+    margin-top: 50px;
+    padding-bottom: 66px;
+}
+
+.contacts-main-location-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $mainColor;
+    @media (min-width: $tablet) {
+        font-size: 17px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 20px;
+    }
+    & span {
+        padding-left: 12px;
+        @media (min-width: $desktop) {
+            padding-left: 16px;
+        }
+    }
+}
+
+.contacts-main-map {
+    width: 15px;
+    @media (min-width: $tablet) {
+        width: 25px;
+    }
+}

@@ -1,0 +1,194 @@
+.popular-items {
+    margin-top: 30px;
+}
+
+.popular-items-list {
+    display: block;
+    @media (min-width: $tablet){
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.popular-items-list-item:not(:last-child) {
+    margin-bottom: 20px;
+    @media (min-width: $tablet){
+        margin-bottom: 0;
+    }
+}
+
+.pop-item-container {
+    padding-left: 18px;
+    height: 184px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $containerColor2;
+    background-image: url('../images/mobile/blue-triangle.png'), 
+        url('../images/mobile/yellow-triangle.png');
+    background-repeat: no-repeat;
+    background-position: right 0 top 0, right 0 bottom 0;
+    @media (min-width: $tablet){
+        width: 227px;
+        height: 152px;
+        border-radius: 5px;
+    }
+    @media (min-width: $desktop){
+        width: 302px;
+        height: 202px;
+    }
+    @media (min-width: $wdesktop){
+        width: 366px;
+        height: 246px;
+    }
+}
+
+.popular-items-list-item:nth-child(1) .pop-item-container {
+    @media (min-width: $tablet){
+        background-image: url('../images/tablet/blue-triangle.png'), 
+        url('../images/tablet/yellow-triangle.png');
+        background-repeat: no-repeat;
+        background-position: right 0 top 0, right 0 bottom 0;
+    }
+    @media (min-width: $desktop){
+        background-image: url('../images/desktop/blue-triangle.png'), 
+        url('../images/desktop/yellow-triangle.png');
+    }
+    @media (min-width: $wdesktop){
+        background-image: url('../images/wdesktop/blue-triangle.png'), 
+        url('../images/wdesktop/yellow-triangle.png');
+    }
+}
+
+.popular-items-list-item:nth-child(2) .pop-item-container {
+    @media (min-width: $tablet){
+        background-image: url('../images/tablet/yellow-triangle-2.png');
+        background-repeat: no-repeat;
+        background-position: right 0;
+    }
+    @media (min-width: $desktop){
+        background-image: url('../images/desktop/yellow-triangle-2.png');
+    }
+    @media (min-width: $wdesktop){
+        background-image: url('../images/wdesktop/yellow-triangle-2.png');
+    }
+}
+
+.popular-items-list-item:nth-child(3) .pop-item-container {
+    @media (min-width: $tablet){
+        background-image: url('../images/tablet/blue-triangle-3.png'),
+        url('../images/tablet/yellow-triangle-3.png');
+        background-repeat: no-repeat;
+        background-position: right 0 bottom 0, right 0 top 0;
+    }
+    @media (min-width: $desktop){
+        background-image: url('../images/desktop/blue-triangle-3.png'),
+        url('../images/desktop/yellow-triangle-3.png');
+    }
+    @media (min-width: $wdesktop){
+        background-image: url('../images/wdesktop/blue-triangle-3.png'),
+        url('../images/wdesktop/yellow-triangle-3.png');
+    }
+}
+
+.pop-item-info {
+    flex-basis: 140px;
+    @media (min-width: $tablet){
+        flex-basis: 96px;
+    }
+    @media (min-width: $desktop){
+        flex-basis: 127px;
+    }
+    @media (min-width: $wdesktop){
+        flex-basis: 153px;
+    }
+}
+
+.pop-item-title {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: calc(30/22);
+    color: $mainColor2;
+    @media (min-width: $tablet){
+        font-size: 15px;
+    }
+    @media (min-width: $desktop){
+        font-size: 20px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 24px;
+    }
+}
+
+.pop-item-price {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25/18);
+    color: $mainColor2;
+    @media (min-width: $tablet){
+        font-size: 12px;
+    }
+    @media (min-width: $desktop){
+        font-size: 16px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 20px;
+    }
+}
+
+.pop-item-price__value {
+    color: $priceColor;
+}
+
+.popular-items-list-item:nth-child(1) .pop-item-img-wrapper {
+    width: 162px;
+    @media (min-width: $tablet){
+        width: 110px;
+    }
+    @media (min-width: $desktop){
+        width: 146px;
+    }
+    @media (min-width: $wdesktop){
+        width: 177px;
+    }
+}
+
+.popular-items-list-item:nth-child(2) .pop-item-img-wrapper {
+    width: 160px;
+    @media (min-width: $tablet){
+        width: 117px;
+    }
+    @media (min-width: $desktop){
+        width: 155px;
+    }
+    @media (min-width: $wdesktop){
+        width: 188px;
+    }
+}
+
+.popular-items-list-item:nth-child(3) .pop-item-img-wrapper {
+    width: 148px;
+    padding-right: 18px;
+    @media (min-width: $tablet){
+        width: 108px;
+        padding-right: 11px;
+    }
+    @media (min-width: $desktop){
+        width: 144px;
+        padding-right: 15px;
+    }
+    @media (min-width: $wdesktop){
+        width: 175px;
+        padding-right: 15px;
+    }
+}
+
+.pop-item-img-wrapper img {
+    width: 100%;
+}

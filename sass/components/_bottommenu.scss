@@ -1,0 +1,98 @@
+.bottom-menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 69px;
+    background-color: $backgoundColor;
+    @media (min-width: $tablet){
+        height: 95px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media (min-width: $wdesktop){
+        display: none;
+    }
+}
+
+.bottom-menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: $mobile;
+    margin: 0 auto;
+    height: 100%;
+    @media (min-width: $tablet){
+        max-width: $tablet;
+    }
+    @media (min-width: $desktop){
+        max-width: $desktop;
+    }
+}
+
+.bottom-menu-item {
+    text-align: center;
+    position: relative;
+    height: 44px;
+    @media (min-width: $tablet){
+        height: 55px;
+    }
+}
+
+.bottom-menu-svg-home {
+    width: 23px;
+    @media (min-width: $tablet){
+        width: 29px;
+    }
+}
+
+.bottom-menu-svg-catalogue, .bottom-menu-svg-liked {
+    width: 24px;
+    fill: transparent;
+    stroke: $secondaryColor;
+    @media (min-width: $tablet){
+        width: 30px;
+    }
+}
+
+.bottom-menu-svg-account {
+    width: 20px;
+    fill: transparent;
+    stroke: $secondaryColor;
+    @media (min-width: $tablet){
+        width: 30px;
+    }
+}
+
+.bottom-menu-basket {
+    width: 28px;
+    fill: $secondaryColor;
+    stroke: transparent;
+    @media (min-width: $tablet){
+        width: 36px;
+    }
+}
+
+.bottom-menu-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 0;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: calc(14/10);
+    text-align: center;
+    color: $secondaryColor;
+    @media (min-width: $tablet){
+        font-size: 12px;
+    }
+    @media (min-width: $desktop){
+        font-size: 14px;
+    }
+}

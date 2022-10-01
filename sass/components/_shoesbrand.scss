@@ -1,0 +1,115 @@
+.shoes-brand {
+    margin-top: 30px;
+    @media (min-width: $tablet){
+        margin-top: 50px;
+    }
+    @media (min-width: $wdesktop){
+        margin-top: 60px;
+    }
+}
+
+.shoes-brand-container {
+    display: flex;
+    flex-direction: column-reverse;
+    @media (min-width: $tablet){
+        flex-direction: row;
+    }
+}
+
+.shoes-brand-info {
+    margin-top: 15px;
+    @media (min-width: $tablet){
+        margin-top: 0;
+        margin-right: 30px;
+    }
+    @media (min-width: $desktop){
+        margin-right: 60px;
+    }
+    @media (min-width: $wdesktop){
+        margin-right: 93px;
+    }
+}
+
+.shoes-brand-info__title {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22/16);
+    text-align: center;
+    color: $mainColor;
+    @media (min-width: $tablet){
+        text-align: left;
+        font-size: 30px;
+    }
+    @media (min-width: $desktop){
+        font-size: 38px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 42px;
+    }
+}
+
+.shoes-brand-info__text {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16/12);
+    text-align: center;
+    color: $mainColor;
+    @media (min-width: $tablet){
+        margin-top: 30px;
+        text-align: left;
+        font-size: 16px;
+    }
+    @media (min-width: $desktop){
+        font-size: 18px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 20px;
+    }
+}
+
+.shoes-brand-btn-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $tablet){
+        margin-top: 30px;
+        justify-content: flex-start;
+    }
+}
+
+.shoes-brand-info__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 149px;
+    height: 33px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15/12);
+    color: $backgoundColor;
+    background-color: $buttonColor;
+    border-radius: 3px;
+    cursor: pointer;
+    @media (min-width: $tablet){
+        width: 301px;
+        height: 59px;
+        font-size: 18px;
+    }
+    @media (min-width: $desktop){
+        width: 365px;
+    }
+    @media (min-width: $wdesktop){
+        width: 449px;
+        font-size: 20px;
+    }
+}

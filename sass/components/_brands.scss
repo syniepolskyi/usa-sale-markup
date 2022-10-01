@@ -1,0 +1,103 @@
+.brands {
+    margin-top: 30px;
+    @media (min-width: $tablet){
+        margin-top: 50px;
+    }
+}
+
+.brands__title {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: calc(30/22);
+    color: $mainColor;
+    @media (min-width: $tablet){
+        font-size: 30px;
+    }
+    @media (min-width: $desktop){
+        font-size: 38px;
+    }
+}
+
+.brands-list-slider {
+    margin-top: 25px;
+    @media (min-width: $desktop){
+        margin-top: 30px;
+    }
+}
+
+.brands-list-item {
+    width: 104px;
+    @media (min-width: $tablet){
+        width: 131px;
+    }
+    @media (min-width: $desktop){
+        width: 174px;
+    }
+    @media (min-width: $wdesktop){
+        width: 175px;
+    }
+}
+
+.brands-item-container {
+    height: 104px;
+    background-color: $containerColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: $tablet){
+        height: 131px;
+    }
+    @media (min-width: $desktop){
+        height: 174px;
+    }
+    @media (min-width: $wdesktop){
+        height: 175px;
+    }
+}
+
+.brands-item-container img {
+    width: 50%;
+}
+
+.brands-item__title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(12/10);
+    color: $mainColor;
+    @media (min-width: $tablet){
+        font-size: 15px;
+    }
+    @media (min-width: $desktop){
+        font-size: 16px;
+    }
+    @media (min-width: $wdesktop){
+        font-size: 18px;
+    }
+}
+
+.brands ul.lSPager {
+    margin-top: 25px !important;
+    @media (min-width: $tablet){
+        margin-top: 30px !important;
+    }
+}
+
+.brands ul.lSPager.lSpg > li > a {
+    background-color: $containerColor;
+}
+
+.brands ul.lSPager.lSpg > li.active > a {
+    background-color: $buttonColor;
+}

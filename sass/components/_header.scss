@@ -1,0 +1,174 @@
+.header {
+  background: linear-gradient(
+      270.84deg,
+      #1f3454 0%,
+      #294060 49.03%,
+      #3e5474 100%
+    ),
+    #0061fb;
+  padding-top: 8px;
+  @media (min-width: $tablet) {
+    padding-top: 0;
+  }
+  @media (min-width: $wdesktop) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+}
+
+.header-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: $wdesktop) {
+    height: 70px;
+  }
+}
+
+.header-left-menu,
+.header-right-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.header-left-menu {
+  display: flex;
+  @media (min-width: $wdesktop) {
+    display: none;
+  }
+}
+
+.header-search-container {
+  display: none;
+  @media (min-width: $wdesktop) {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+}
+
+.header-search-input {
+  margin-right: 2px;
+  padding-left: 42px;
+  width: 400px;
+  height: 42px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37;
+  color: $mainColor;
+  border: 1.5px solid $backgoundColor;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  &::placeholder {
+    color: $placeholderColor;
+  }
+}
+.header-search-button {
+  width: 108px;
+  height: 42px;
+  background-color: $backgoundColor;
+  border: 1.5px solid $backgoundColor;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+}
+.input-svg-search {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  fill: transparent;
+  width: 12px;
+}
+.header-search-clear-button {
+  position: absolute;
+  right: 110px;
+  width: 30px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+.input-svg-cross {
+  stroke: $placeholderColor;
+  width: 12px;
+}
+
+.header-logo {
+  flex-basis: 113px;
+  text-align: center;
+  @media (min-width: $tablet) {
+    flex-basis: 149px;
+  }
+  @media (min-width: $desktop) {
+    flex-basis: 169px;
+  }
+  @media (min-width: $wdesktop) {
+    flex-basis: 146px;
+    text-align: initial;
+  }
+}
+
+.main-logo-svg {
+  width: 100%;
+  @media (min-width: $tablet) {
+    padding-top: 10px;
+  }
+}
+
+.header-logo-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: $backgoundColor;
+  @media (min-width: $tablet) {
+    font-size: 30px;
+  }
+}
+
+.header-svg {
+  stroke: $backgoundColor;
+  fill: transparent;
+  width: 16px;
+  @media (min-width: $tablet) {
+    width: 23px;
+  }
+}
+
+.header-heart-item,
+.header-basket-item,
+.header-phone-item-right {
+  display: none;
+  @media (min-width: $wdesktop) {
+    display: block;
+  }
+}
+
+.header-search-item {
+  display: block;
+  @media (min-width: $wdesktop) {
+    display: none;
+  }
+}
+
+svg.svg-heart {
+  width: 27px;
+}
+
+svg.svg-basket {
+  width: 30px;
+  stroke: none;
+  fill: $backgoundColor;
+}

@@ -1,0 +1,42 @@
+.hero {
+    margin-top: 30px;
+}
+
+.hero > h3 {
+  display: none;
+}
+
+.hero__photo-img {
+    width: 100%;
+}
+
+.hero-top-menu {
+  display: none;
+  @media (min-width: $wdesktop){
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+.hero-top-list {
+    display: flex;
+    gap: 48px;
+}
+
+.hero-top-list a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22/16);
+    color: $mainColor;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-svg {
+    fill: $mainColor;
+    stroke: $mainColor;
+    width: 7px;
+}

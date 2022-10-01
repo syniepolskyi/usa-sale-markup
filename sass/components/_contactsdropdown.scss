@@ -1,0 +1,80 @@
+.contacts-dropdown {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 183px;
+    height: 158px;
+    left: 50px;
+    top: 69px;
+    background-color: $backgoundColor;
+    z-index: 1;
+    transition: all .25s ease;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    @media (min-width: $wdesktop){
+        left: 950px;
+        top: 91px;
+    }
+}
+
+.contacts-dropdown.shown {
+    visibility: visible;
+    opacity: 1;
+}
+
+.contacts-dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts-dropdown-item > a {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-dropdown-phone {
+    width: 16px;
+}
+
+.contacts-dropdown-mail {
+    width: 17px;
+}
+
+.contacts-dropdown-viber {
+    width: 17px;
+}
+
+.contacts-dropdown-telegram {
+    width: 17px;
+}
+
+.contacts-dropdown-item > a {
+    color: $mainColor;
+}
+
+.contacts-dropdown-item > a > span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-left: 8px;
+}
+
+.contacts-dropdown-item > a.contacts-dropdown-viber-link {
+    color: $viberColor;
+}
+
+.contacts-dropdown-item > a.contacts-dropdown-viber-link svg {
+    fill: $viberColor;
+}
+
+.contacts-dropdown-item > a.contacts-dropdown-telegram-link {
+    color: $telegramColor;
+}
+
+.contacts-dropdown-item > a.contacts-dropdown-telegram-link svg {
+    fill: $telegramColor;
+}

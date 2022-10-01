@@ -1,0 +1,117 @@
+.top-line {
+    border-top: 1px solid $containerColor;
+}
+
+.back-from-child-menu {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.child-menu-arrow {
+    width: 24px;
+    @media (min-width: $tablet) {
+        width: 33px;
+    }
+    @media (min-width: $desktop) {
+        width: 33px;
+    }
+}
+
+.child-menu-title {
+    margin: 0;
+    margin-top: 32px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25/18);
+    text-align: center;
+    color: $mainColor;
+    @media (min-width: $tablet) {
+        font-size: 21px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+}
+
+.child-menu-goods-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.child-menu-goods-title {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19/14);
+    color: $mainColor;
+    @media (min-width: $tablet) {
+        font-size: 21px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 24px;
+    }
+}
+
+.child-menu-goods-list {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    @media (min-width: $tablet) {
+        gap: 15px;
+    }
+    @media (min-width: $desktop) {
+        gap: 22px;
+    }
+}
+
+.child-menu-goods-item {
+    display: block;
+    width: 105px;
+    @media (min-width: $tablet) {
+        width: 129px;
+    }
+    @media (min-width: $desktop) {
+        width: 170px;
+    }
+}
+
+.child-menu-goods-img-container {
+    width: 100%;
+    height: 53px;
+    background: $containerColor;
+    border-radius: 3px;
+    overflow: hidden;
+    @media (min-width: $tablet) {
+        height: 74px;
+    }
+    @media (min-width: $desktop) {
+        height: 102px;
+    }
+}
+
+.child-menu-item-title {
+    margin: 0;
+    padding-top: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(14/10);
+    text-align: center;
+    color: $mainColor;
+    @media (min-width: $tablet) {
+        padding-top: 15px;
+        font-size: 17px;
+    }
+    @media (min-width: $desktop) {
+        font-size: 20px;
+    }
+}
